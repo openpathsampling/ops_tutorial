@@ -1,7 +1,7 @@
 # OpenPathSampling Alanine Dipeptide Tutorial
 
 This is an introductory tutorial for OpenPathSampling, and is generally the
-tutorial that we recommend as a starting place for new users. It is primarily
+tutorial that we recommend as a starting place for new users.  It is primarily
 focused on basic transition path sampling, using the OpenMM engine. It also
 includes analysis of a committor simulation. Although the OpenMM engine is
 used, most of the setup and analysis is valid for other engines, as well.
@@ -32,9 +32,10 @@ We strongly recommend installing the requirements using conda. Once you have
 installed conda, the following commands will install OpenPathSampling and the
 extras that are required for this tutorial:
 
-```bash
+```text
 conda install -c conda-forge openpathsampling
 conda install -c conda-forge -c omnia openmm openmmtools
+conda install -c conda-forge jupyter tqdm
 conda install -c conda-forge nglview
 jupyter-nbextension enable nglview --py --sys-prefix
 ```
@@ -54,6 +55,7 @@ save time, you can start that analysis (running the cells up to and including
 that one) before starting the tutorial (but after downloading the precomputed
 files from figshare) and let that analysis run while you work through the
 earlier parts.
+
 
 ## Using the tutorial
 
@@ -80,6 +82,13 @@ in comments. In these cells, you will need to add code. Frequently, this just
 involves a slight modification to a previous cell. There are also a few
 optional tasks that more advanced students might attempt, marked as advanced
 exercises.
+
+Cells marked with the cell magic `%%time` may take a few minutes to complete,
+so don't worry if they don't complete immediately.
+
+Notebook 4 is optional, and has no exercises in it. It provides setup for a
+very different kind of system (a 2D toy model), and illustrates that the
+overall setup process is the same, regardless of the underlying engine.
 
 ## History
 
