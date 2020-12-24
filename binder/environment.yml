@@ -1,0 +1,13 @@
+name: ops-tutorial
+channels:
+  - conda-forge
+  - omnia
+  - defaults
+dependencies:
+  - jupyter
+  - nglview
+  - openmm
+  - tqdm
+  - openpathsampling
+  - openmmtools
+prefix: /Users/dwhs/miniconda3/envs/ops-tutorial
