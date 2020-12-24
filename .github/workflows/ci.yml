@@ -10,7 +10,7 @@ on:
       - main
 
   schedule:
-    - cron: "7 7 * * 7"
+    - cron: "0 0 * * 0"
 
 defaults:
   run:
