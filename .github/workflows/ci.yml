@@ -7,8 +7,8 @@ on:
   push:
     branches:
       - main
-  #schedule:
-    #- cron: "0 0 * * 0"
+  schedule:
+    - cron: "0 0 * * 0"
 
 defaults:
   run:
@@ -38,10 +38,9 @@ jobs:
           conda info
           conda list
       - name: "Patch answers"
-        run: |
-          patch < .github/workflows/answers_1.patch
-          patch < .github/workflows/answers_2.patch
-          patch < .github/workflows/answers_3.patch
+        run: source devtools/patch-all
       - name: "Run tests"
         run: |
-          pytest --nbval-lax 1_tps_sampling_tutorial.ipynb
+          pytest --nbval-lax \
+            1_tps_sampling_tutorial.ipynb \
+            4_mstis_sampling_tutorial.ipynb

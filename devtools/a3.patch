@@ -1,0 +1,27 @@
+diff --git a/3_committor_analysis_tutorial.ipynb b/3_committor_analysis_tutorial.ipynb
+index 6cbc363..957f0ab 100644
+--- a/3_committor_analysis_tutorial.ipynb
++++ b/3_committor_analysis_tutorial.ipynb
+@@ -168,6 +168,22 @@
+     "# Remember to start by creating a `psi_hash`."
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER:\n",
++    "psi_hash = lambda x : float(psi(x))\n",
++    "analyzer.to_pandas(label_function=psi_hash)\n",
++    "hist1D, psi_bins = analyzer.committor_histogram(psi_hash, alpha_R, bins=10)\n",
++    "bin_widths = [psi_bins[i+1]-psi_bins[i] for i in range(len(psi_bins)-1)]\n",
++    "plt.bar(x=psi_bins[:-1], height=hist1D, width=bin_widths)\n",
++    "plt.xlabel(\"$\\psi$\")\n",
++    "plt.ylabel(\"$p_B$\")"
++   ]
++  },
+   {
+    "cell_type": "markdown",
+    "metadata": {},
