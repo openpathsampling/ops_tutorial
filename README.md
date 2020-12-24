@@ -95,7 +95,7 @@ overall setup process is the same, regardless of the underlying engine.
 This tutorial has been used in multiple classes and workshops, including
 several E-CAM Extended Software Development Workshops (Leiden, The Netherlands,
 2017; Lyon, France, 2019), and Master's-level courses in Biomolecular
-Simulation at the University of Amsterdam (2017--2019).
+Simulation at the University of Amsterdam (2017--present).
 
 This tutorial was developed with financial support from the European Union's
 Horizon 2020 research and innovation program, under grant agreement No. 676531
