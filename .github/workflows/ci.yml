@@ -39,8 +39,12 @@ jobs:
           conda list
       - name: "Patch answers"
         run: source devtools/patch-all
+      - name: "Download data"
+        run: source devtools/download-files
       - name: "Run tests"
         run: |
           pytest --nbval-lax \
             1_tps_sampling_tutorial.ipynb \
+            2_tps_analysis_tutorial.ipynb \
+            3_committor_analysis_tutorial.ipynb \
             4_mstis_sampling_tutorial.ipynb
