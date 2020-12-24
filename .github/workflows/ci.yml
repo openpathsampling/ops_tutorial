@@ -1,11 +1,16 @@
+name: "Tests"
+
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
-  schedule: "7 7 * * 7 *"
+
+  push:
+    branches:
+      - main
+
+  schedule:
+    cron: "7 7 * * 7 *"
 
 defaults:
   run:
