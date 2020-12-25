@@ -1,18 +1,8 @@
 diff --git a/3_committor_analysis_tutorial.ipynb b/3_committor_analysis_tutorial.ipynb
-index 449afa4..c7c5b97 100644
+index 6cbc363..957f0ab 100644
 --- a/3_committor_analysis_tutorial.ipynb
 +++ b/3_committor_analysis_tutorial.ipynb
-@@ -174,15 +161,29 @@
-   {
-    "cell_type": "code",
-    "execution_count": null,
--   "metadata": {
--    "collapsed": true
--   },
-+   "metadata": {},
-    "outputs": [],
-    "source": [
-     "# YOUR TURN: Do the same for the psi variable.\n",
+@@ -168,6 +168,22 @@
      "# Remember to start by creating a `psi_hash`."
     ]
    },
@@ -29,7 +19,7 @@ index 449afa4..c7c5b97 100644
 +    "bin_widths = [psi_bins[i+1]-psi_bins[i] for i in range(len(psi_bins)-1)]\n",
 +    "plt.bar(x=psi_bins[:-1], height=hist1D, width=bin_widths)\n",
 +    "plt.xlabel(\"$\\psi$\")\n",
-+    "plt.ylabel(\"$p_B$\");"
++    "plt.ylabel(\"$p_B$\")"
 +   ]
 +  },
    {

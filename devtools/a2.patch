@@ -1,35 +1,31 @@
 diff --git a/2_tps_analysis_tutorial.ipynb b/2_tps_analysis_tutorial.ipynb
-index a6ab056..52b6e52 100644
+index 6d25bc4..b335e13 100644
 --- a/2_tps_analysis_tutorial.ipynb
 +++ b/2_tps_analysis_tutorial.ipynb
-@@ -137,9 +127,17 @@
-   {
-    "cell_type": "code",
-    "execution_count": null,
--   "metadata": {
--    "collapsed": true
--   },
-+   "metadata": {},
-+   "outputs": [],
-+   "source": [
-+    "### ANSWER \n",
-+    "traj = storage.steps[25].active[0].trajectory"
-+   ]
-+  },
+@@ -122,6 +122,16 @@
+     "#traj = storage.steps[####].active[0].trajectory"
+    ]
+   },
 +  {
 +   "cell_type": "code",
 +   "execution_count": null,
 +   "metadata": {},
-    "outputs": [],
-    "source": [
-     "md_traj = traj.to_mdtraj().image_molecules()\n",
-@@ -182,9 +178,45 @@
++   "outputs": [],
++   "source": [
++    "### ANSWER\n",
++    "traj = storage.steps[25].active[0].trajectory"
++   ]
++  },
    {
     "cell_type": "code",
     "execution_count": null,
--   "metadata": {
--    "collapsed": true
--   },
+@@ -165,6 +175,44 @@
+     "# Did your selected snapshot come from an accepted or rejected trial?"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
 +   "metadata": {},
 +   "outputs": [],
 +   "source": [
@@ -65,20 +61,16 @@ index a6ab056..52b6e52 100644
 +    "print(step.change.accepted)"
 +   ]
 +  },
-+  {
-+   "cell_type": "code",
-+   "execution_count": null,
-+   "metadata": {},
-    "outputs": [],
-    "source": [
-     "storage.close()"
-@@ -464,9 +474,18 @@
    {
     "cell_type": "code",
     "execution_count": null,
--   "metadata": {
--    "collapsed": true
--   },
+@@ -422,6 +470,17 @@
+     "# trajB = flexible.steps[####].active[0].trajectory"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
 +   "metadata": {},
 +   "outputs": [],
 +   "source": [
@@ -87,10 +79,6 @@ index a6ab056..52b6e52 100644
 +    "trajB = flexible.steps[8000].active[0].trajectory"
 +   ]
 +  },
-+  {
-+   "cell_type": "code",
-+   "execution_count": null,
-+   "metadata": {},
-    "outputs": [],
-    "source": [
-     "ax = plotter.plot(xlim=(-np.pi, 0), ylim=(-np.pi/2, np.pi), cmap=\"Blues\")\n",
+   {
+    "cell_type": "code",
+    "execution_count": null,
