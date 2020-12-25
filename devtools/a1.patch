@@ -1,0 +1,43 @@
+diff --git a/1_tps_sampling_tutorial.ipynb b/1_tps_sampling_tutorial.ipynb
+index 7814be1..555e20a 100644
+--- a/1_tps_sampling_tutorial.ipynb
++++ b/1_tps_sampling_tutorial.ipynb
+@@ -191,6 +191,16 @@
+     "# Figure out which atoms make the dihedral, find their atom indices, then create the CV."
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER\n",
++    "psi = paths.MDTrajFunctionCV(\"psi\", md.compute_dihedrals, engine.topology, indices=[[6,8,14,16]])"
++   ]
++  },
+   {
+    "cell_type": "markdown",
+    "metadata": {},
+@@ -232,6 +242,21 @@
+     "# YOUR TURN: define the `alpha_R` state"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER\n",
++    "alpha_R = (\n",
++    "    paths.PeriodicCVDefinedVolume(phi, lambda_min=-180/deg, lambda_max=0/deg, \n",
++    "                                  period_min=-np.pi, period_max=np.pi)\n",
++    "    & paths.PeriodicCVDefinedVolume(psi, lambda_min=-100/deg, lambda_max=0/deg,\n",
++    "                                    period_min=-np.pi, period_max=np.pi)\n",
++    ").named(\"alpha_R\")"
++   ]
++  },
+   {
+    "cell_type": "markdown",
+    "metadata": {},
