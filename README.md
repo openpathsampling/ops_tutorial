@@ -1,3 +1,7 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab)
+![Tests](https://github.com/openpathsampling/ops_tutorial/workflows/Tests/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/openpathsampling/ops_tutorial)
+
 # OpenPathSampling Alanine Dipeptide Tutorial
 
 This is an introductory tutorial for OpenPathSampling, and is generally the
@@ -22,6 +26,12 @@ and
 [pandas](https://pandas.pydata.org/).
 
 ## Requirements
+
+If you'd prefer not to install things locally, you can try out the tutorial
+using [this Binder
+link](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab).
+Performance is likely to be better on your own computer than on Binder, but
+Binder is useful if you can't/don't want to install the software.
 
 ### Software
 
