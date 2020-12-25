@@ -1,3 +1,7 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab)
+![Tests](https://github.com/openpathsampling/ops_tutorial/workflows/Tests/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/openpathsampling/ops_tutorial)
+
 # OpenPathSampling Alanine Dipeptide Tutorial
 
 This is an introductory tutorial for OpenPathSampling, and is generally the
@@ -22,6 +26,12 @@ and
 [pandas](https://pandas.pydata.org/).
 
 ## Requirements
+
+If you'd prefer not to install things locally, you can try out the tutorial
+using [this Binder
+link](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab).
+Performance is likely to be better on your own computer than on Binder, but
+Binder is useful if you can't/don't want to install the software.
 
 ### Software
 
@@ -90,12 +100,17 @@ Notebook 4 is optional, and has no exercises in it. It provides setup for a
 very different kind of system (a 2D toy model), and illustrates that the
 overall setup process is the same, regardless of the underlying engine.
 
+Notebook 5 contains some more advanced exercises related to TIS, and also shows
+how to use the OPS command line interface. In addition to the requirements
+listed above, it requires installation of `openpathsampling-cli`.
+
 ## History
 
 This tutorial has been used in multiple classes and workshops, including
 several E-CAM Extended Software Development Workshops (Leiden, The Netherlands,
-2017; Lyon, France, 2019), and Master's-level courses in Biomolecular
-Simulation at the University of Amsterdam (2017--2019).
+2017; Lyon, France, 2019), Master's-level courses in Biomolecular Simulation at
+the University of Amsterdam (since 2017), and the CECAM flagship school MolSim
+(2021).
 
 This tutorial was developed with financial support from the European Union's
 Horizon 2020 research and innovation program, under grant agreement No. 676531
