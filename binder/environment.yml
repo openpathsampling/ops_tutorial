@@ -11,4 +11,5 @@ dependencies:
   - tqdm
   - openpathsampling
   - openmmtools
+  - jupyterlab <3
 prefix: /Users/dwhs/miniconda3/envs/ops-tutorial
