@@ -1,3 +1,4 @@
+nglview install && nglview enable
 jupyter-labextension install @jupyter-widgets/jupyterlab-manager
-jupyter-labextension install nglview-js-widgets@$nglviewversion
+jupyter-labextension install nglview-js-widgets
 bash ./devtools/download-files
