@@ -1,0 +1,14 @@
+name: "Build binder"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-binder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: s-weigand/trigger-mybinder-build@v1
+        with:
+          target-repo: openpathsampling/ops_tutorial
