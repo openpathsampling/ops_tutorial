@@ -20,7 +20,10 @@ jobs:
     name: "Test answer key"
     strategy:
       matrix:
-        CONDA_PY: [3.7]
+        CONDA_PY:
+          - 3.7
+          - 3.8
+          - 3.9
 
     steps:
       - uses: actions/checkout@v2
