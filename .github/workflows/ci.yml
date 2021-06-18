@@ -20,7 +20,10 @@ jobs:
     name: "Test answer key"
     strategy:
       matrix:
-        CONDA_PY: [3.7]
+        CONDA_PY:
+          - 3.7
+          - 3.8
+          - 3.9
 
     steps:
       - uses: actions/checkout@v2
@@ -46,4 +49,5 @@ jobs:
           pytest --nbval-lax \
             1_tps_sampling_tutorial.ipynb \
             2_tps_analysis_tutorial.ipynb \
+            3_committor_analysis_tutorial.ipynb \
             4_mstis_sampling_tutorial.ipynb
