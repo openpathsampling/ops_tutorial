@@ -49,4 +49,5 @@ jobs:
           pytest --nbval-lax \
             1_tps_sampling_tutorial.ipynb \
             2_tps_analysis_tutorial.ipynb \
+            3_committor_analysis_tutorial.ipynb \
             4_mstis_sampling_tutorial.ipynb
