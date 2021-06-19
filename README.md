@@ -44,7 +44,7 @@ extras that are required for this tutorial:
 
 ```text
 conda install -c conda-forge openpathsampling
-conda install -c conda-forge -c omnia openmm openmmtools
+conda install -c conda-forge openmm openmmtools
 conda install -c conda-forge jupyter tqdm
 conda install -c conda-forge nglview
 jupyter-nbextension enable nglview --py --sys-prefix

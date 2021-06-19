@@ -1,7 +1,6 @@
 name: ops-tutorial
 channels:
   - conda-forge
-  - omnia
   - defaults
 dependencies:
   - jupyter
@@ -11,5 +10,5 @@ dependencies:
   - tqdm
   - openpathsampling
   - openmmtools
-  - jupyterlab <3
+  - jupyterlab
 prefix: /Users/dwhs/miniconda3/envs/ops-tutorial
