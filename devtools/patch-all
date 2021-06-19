@@ -5,5 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 patch < ${DIR}/a1.patch
 patch < ${DIR}/a2.patch
 patch < ${DIR}/a3.patch
+patch < ${DIR}/a5.patch
+patch < ${DIR}/a6.patch
+patch < ${DIR}/a7.patch
 #patch < ${DIR}/testing.patch
 

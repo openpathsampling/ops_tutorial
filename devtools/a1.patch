@@ -1,8 +1,8 @@
 diff --git a/1_tps_sampling_tutorial.ipynb b/1_tps_sampling_tutorial.ipynb
-index 7814be1..555e20a 100644
+index bf34b4e..e7d75d3 100644
 --- a/1_tps_sampling_tutorial.ipynb
 +++ b/1_tps_sampling_tutorial.ipynb
-@@ -191,6 +191,16 @@
+@@ -187,6 +187,16 @@
      "# Figure out which atoms make the dihedral, find their atom indices, then create the CV."
     ]
    },
@@ -19,7 +19,7 @@ index 7814be1..555e20a 100644
    {
     "cell_type": "markdown",
     "metadata": {},
-@@ -232,6 +242,21 @@
+@@ -228,6 +238,21 @@
      "# YOUR TURN: define the `alpha_R` state"
     ]
    },
