@@ -1,0 +1,43 @@
+diff --git a/5_custom_shooting_setup.ipynb b/5_custom_shooting_setup.ipynb
+index 362391b..a1df0ba 100644
+--- a/5_custom_shooting_setup.ipynb
++++ b/5_custom_shooting_setup.ipynb
+@@ -170,6 +170,16 @@
+     "# beta = ... # fill in the ellipsis and uncomment this line"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER:\n",
++    "beta = 1.0 / engine.integ.temperature  # kB = 1"
++   ]
++  },
+   {
+    "cell_type": "code",
+    "execution_count": null,
+@@ -317,6 +327,21 @@
+     "# 2. Append that strategy and the global_strategy to the biased_shooting_scheme"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER:\n",
++    "biased_strategy = strategies.TwoWayShootingStrategy(\n",
++    "    modifier=modifier,\n",
++    "    selector=gaussian_sel,\n",
++    "    engine=engine\n",
++    ")\n",
++    "biased_shooting_scheme.append([global_strategy, biased_strategy])"
++   ]
++  },
+   {
+    "cell_type": "markdown",
+    "metadata": {},

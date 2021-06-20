@@ -1,8 +1,8 @@
 diff --git a/2_tps_analysis_tutorial.ipynb b/2_tps_analysis_tutorial.ipynb
-index 6d25bc4..b335e13 100644
+index 5bd5f82..2a97107 100644
 --- a/2_tps_analysis_tutorial.ipynb
 +++ b/2_tps_analysis_tutorial.ipynb
-@@ -122,6 +122,16 @@
+@@ -126,6 +126,16 @@
      "#traj = storage.steps[####].active[0].trajectory"
     ]
    },
@@ -19,7 +19,7 @@ index 6d25bc4..b335e13 100644
    {
     "cell_type": "code",
     "execution_count": null,
-@@ -165,6 +175,44 @@
+@@ -176,6 +186,44 @@
      "# Did your selected snapshot come from an accepted or rejected trial?"
     ]
    },
@@ -64,7 +64,7 @@ index 6d25bc4..b335e13 100644
    {
     "cell_type": "code",
     "execution_count": null,
-@@ -422,6 +470,17 @@
+@@ -437,6 +485,17 @@
      "# trajB = flexible.steps[####].active[0].trajectory"
     ]
    },

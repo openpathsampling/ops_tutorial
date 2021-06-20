@@ -1,0 +1,45 @@
+diff --git a/7_parallel_tis_setup.ipynb b/7_parallel_tis_setup.ipynb
+index 72dfb3c..2358afc 100644
+--- a/7_parallel_tis_setup.ipynb
++++ b/7_parallel_tis_setup.ipynb
+@@ -144,6 +144,22 @@
+     "# 2. Append the global_strategy and the appropriate shooting strategy to each scheme"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "3c79c94f-eeae-4e27-8828-0b3ef42bcbab",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER:\n",
++    "for ens_num, scheme in enumerate([scheme_0, scheme_1, scheme_2, scheme_3, scheme_4]):\n",
++    "    strat = strategies.OneWayShootingStrategy(\n",
++    "        ensembles=tis_network.sampling_ensembles[ens_num],\n",
++    "        engine=engine\n",
++    "    )\n",
++    "    scheme.append([strat, global_strategy])"
++   ]
++  },
+   {
+    "cell_type": "markdown",
+    "id": "48d17350-73c8-402b-b3ba-156cb7a611cc",
+@@ -273,6 +289,17 @@
+     "# YOUR TURN: Answer the question above"
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "3746cb59-74ee-455c-a0ad-bc0c971b5141",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER:\n",
++    "retis_scheme.n_steps_for_trials(retis_scheme.movers['shooting'][0], 250)"
++   ]
++  },
+   {
+    "cell_type": "markdown",
+    "id": "b524c507-e7e6-4f03-af94-9f2585d1b8c3",

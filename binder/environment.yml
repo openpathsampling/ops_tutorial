@@ -9,6 +9,7 @@ dependencies:
   - openmm
   - tqdm
   - openpathsampling
+  - openpathsampling-cli
   - openmmtools
   - jupyterlab
 prefix: /Users/dwhs/miniconda3/envs/ops-tutorial

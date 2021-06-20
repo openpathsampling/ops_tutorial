@@ -1,0 +1,26 @@
+diff --git a/6_custom_shooting_analysis.ipynb b/6_custom_shooting_analysis.ipynb
+index f3b0931..da7622e 100644
+--- a/6_custom_shooting_analysis.ipynb
++++ b/6_custom_shooting_analysis.ipynb
+@@ -194,6 +194,21 @@
+     "# biased_rej_x, biased_rej_y = ..."
+    ]
+   },
++  {
++   "cell_type": "code",
++   "execution_count": null,
++   "id": "09dfccc9-bb21-47d4-8b9f-c915a1f6e05e",
++   "metadata": {},
++   "outputs": [],
++   "source": [
++    "### ANSWER:\n",
++    "std_rej_steps = [step for step in std_two_way.steps[1:] if not step.change.accepted]\n",
++    "std_rej_x, std_rej_y = get_shooting_points(std_rej_steps)\n",
++    "\n",
++    "biased_rej_steps = [step for step in biased_two_way.steps[1:] if not step.change.accepted]\n",
++    "biased_rej_x, biased_rej_y = get_shooting_points(biased_rej_steps)"
++   ]
++  },
+   {
+    "cell_type": "code",
+    "execution_count": null,
