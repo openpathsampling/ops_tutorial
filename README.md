@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab/tree/contents.ipynb)
 ![Tests](https://github.com/openpathsampling/ops_tutorial/workflows/Tests/badge.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/openpathsampling/ops_tutorial)
 
@@ -29,7 +29,7 @@ and
 
 If you'd prefer not to install things locally, you can try out the tutorial
 using [this Binder
-link](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab).
+link](https://mybinder.org/v2/gh/openpathsampling/ops_tutorial/HEAD?urlpath=lab/tree/contents.ipynb).
 Performance is likely to be better on your own computer than on Binder, but
 Binder is useful if you can't/don't want to install the software.
 
@@ -100,9 +100,11 @@ Notebook 4 is optional, and has no exercises in it. It provides setup for a
 very different kind of system (a 2D toy model), and illustrates that the
 overall setup process is the same, regardless of the underlying engine.
 
-Notebook 5 contains some more advanced exercises related to TIS, and also shows
-how to use the OPS command line interface. In addition to the requirements
-listed above, it requires installation of `openpathsampling-cli`.
+Notebooks 5-8 contain some more advanced exercises related to TIS, and also
+shows how to use the OPS command line interface. In addition to the
+requirements listed above, they requires installation of
+`openpathsampling-cli`. These are for more advanced users, and aren't usually
+part of the introduction for beginners.
 
 ## History
 
