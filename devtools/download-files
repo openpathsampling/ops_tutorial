@@ -9,3 +9,4 @@ curl -Lk -o ${figshare_ID}.zip \
 unzip -d $figshare_ID ${figshare_ID}.zip
 
 mv $figshare_ID/* ./
+rm -f ${figshare_ID}.zip

@@ -3,3 +3,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install nglview-js-widgets@2.7.7
 jupyter nbextension enable nglview --py --sys-prefix
 bash ./devtools/download-files
+
+jupyter lab workspaces import binder/advanced-ops-tutorial.jupyterlab-workspace
+jupyter lab workspaces import binder/intermediate-ops-tutorial.jupyterlab-workspace
+jupyter lab workspaces import binder/beginners-ops-tutorial.jupyterlab-workspace
