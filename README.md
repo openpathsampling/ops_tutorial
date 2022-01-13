@@ -112,7 +112,7 @@ This tutorial has been used in multiple classes and workshops, including
 several E-CAM Extended Software Development Workshops (Leiden, The Netherlands,
 2017; Lyon, France, 2019), Master's-level courses in Biomolecular Simulation at
 the University of Amsterdam (since 2017), and the CECAM flagship school MolSim
-(2021).
+(2021-2022).
 
 This tutorial was developed with financial support from the European Union's
 Horizon 2020 research and innovation program, under grant agreement No. 676531
