@@ -12,4 +12,5 @@ dependencies:
   - openpathsampling-cli
   - openmmtools
   - jupyterlab
+  - ipywidgets <8
 prefix: /Users/dwhs/miniconda3/envs/ops-tutorial
