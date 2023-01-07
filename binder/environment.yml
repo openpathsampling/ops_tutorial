@@ -13,4 +13,5 @@ dependencies:
   - openmmtools
   - jupyterlab
   - ipywidgets <8
+  - numpy <1.24
 prefix: /Users/dwhs/miniconda3/envs/ops-tutorial
